@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustway Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Trustway Bank</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#gold-prices">Live Gold Prices</a></li>
+                <li><a href="#stock-prices">Live Stock Prices</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#register">Apply Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome" id="home">
+        <h2>Welcome to Trustway Bank</h2>
+        <p>Your trusted financial partner for loans, insurance, and investments.</p>
+        <button class="main-btn">Get Started</button>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Gold Loan</h3>
+            <p>Instant loans against gold with low interest rates.</p>
+            <button onclick="navigateTo('register.html')">Apply Now</button>
+        </div>
+        <div class="service-box">
+            <h3>Health Insurance</h3>
+            <p>Secure your health with comprehensive insurance plans.</p>
+            <button onclick="navigateTo('register.html')">Apply Now</button>
+        </div>
+        <div class="service-box">
+            <h3>Retirement Plan</h3>
+            <p>Plan for a safe and secure retirement.</p>
+            <button onclick="navigateTo('register.html')">Apply Now</button>
+        </div>
+        <div class="service-box">
+            <h3>Investment Options</h3>
+            <p>Grow your wealth with expert-guided investment plans.</p>
+            <button onclick="navigateTo('register.html')">Apply Now</button>
+        </div>
+    </section>
+
+   <!-- Live Gold Prices Section -->
+<section class="gold-prices" id="gold-prices">
+    <h2>Live Gold Prices</h2>
+    <div id="gold-price-container">
+        <p>Current Gold Price: <span id="gold-price">Loading...</span> USD</p>
+    </div>
+</section>
+
+<!-- Live Stock Prices Section -->
+<section class="stock-prices" id="stock-prices">
+    <h2>Live Stock Prices</h2>
+    <div id="stock-price-container">
+        <p id="stock-price">Loading...</p> <!-- This will display the stock price -->
+    </div>
+</section>
+
+    <!-- Contact Us Section -->
+    <section class="form-section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="styled-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="form-section" id="register">
+        <h2>Apply Now</h2>
+        <form class="styled-form">
+            <label for="loan-type">Loan Type</label>
+            <select id="loan-type" name="loan-type" required>
+                <option value="gold-loan">Gold Loan</option>
+                <option value="health-insurance">Health Insurance</option>
+                <option value="retirement-plan">Retirement Plan</option>
+                <option value="investment-options">Investment Options</option>
+            </select>
+            <label for="amount">Loan Amount</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Apply</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Trustway Bank. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
